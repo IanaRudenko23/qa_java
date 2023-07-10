@@ -15,12 +15,10 @@ public class LionTest {
         List<String> expectedResult = List.of("Животные", "Птицы", "Рыба");
         List<String> result = lion.getFood();
         assertEquals(expectedResult, result);
-        System.out.println(result);
-
     }
 
-    @Test (expected = Exception.class)
-    public void lionConstructorException () throws Exception {
+    @Test(expected = Exception.class)
+    public void lionConstructorException() throws Exception {
         Lion lion = new Lion("Заяц", feline);
     }
 
